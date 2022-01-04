@@ -49,84 +49,102 @@
                             >
                                 Sign up
                             </h1>
-                            <div class="grid grid-col-1 md:grid-cols-2 gap-x-5">
-                                <div class="mt-4">
-                                    <label class="block text-sm"
-                                        >First Name</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="First name"
-                                    />
-                                </div>
-                                <div class="mt-4">
-                                    <label class="block text-sm"
-                                        >Last Name</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="Last Name"
-                                    />
-                                </div>
-                                <div class="mt-4">
-                                    <label class="block text-sm">Email</label>
-                                    <input
-                                        type="email"
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="Email Address"
-                                    />
-                                </div>
-                                <div class="mt-4">
-                                    <label class="block text-sm"
-                                        >Phone No</label
-                                    >
-                                    <input
-                                        type="text"
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="Phone No"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label class="block mt-4 text-sm">
-                                        Password
-                                    </label>
-                                    <input
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="Password"
-                                        type="password"
-                                    />
-                                </div>
-                                <div>
-                                    <label class="block mt-4 text-sm">
-                                        Confirm Password
-                                    </label>
-                                    <input
-                                        class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                        placeholder="Confirm Password"
-                                        type="password"
-                                    />
-                                </div>
-                            </div>
-                            <button
-                                class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
-                                href="#"
-                            >
-                                Sign up
-                            </button>
-                            <div class="mt-4 text-center">
+                            <form action="" method="POST">
+                                <section
+                                    class="grid grid-col-1 md:grid-cols-2 gap-x-5"
+                                >
+                                    <section class="mt-4">
+                                        <label class="block text-sm"
+                                            >First Name</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            name="firstName"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="First name"
+                                        />
+                                    </section>
+                                    <section class="mt-4">
+                                        <label class="block text-sm"
+                                            >Last Name</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            name="lastName"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="Last Name"
+                                        />
+                                    </section>
+                                    <section class="mt-4">
+                                        <label class="block text-sm"
+                                            >Email</label
+                                        >
+                                        <input
+                                            required
+                                            type="email"
+                                            name="email"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="Email Address"
+                                        />
+                                    </section>
+                                    <section class="mt-4">
+                                        <label class="block text-sm"
+                                            >Phone No</label
+                                        >
+                                        <input
+                                            required
+                                            type="text"
+                                            name="phoneNumber"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="Phone No"
+                                        />
+                                    </section>
+                                    <section>
+                                        <label class="block mt-4 text-sm">
+                                            Password
+                                        </label>
+                                        <input
+                                            required
+                                            name="password"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="Password"
+                                            type="password"
+                                        />
+                                    </section>
+                                    <section>
+                                        <label class="block mt-4 text-sm">
+                                            Confirm Password
+                                        </label>
+                                        <input
+                                            required
+                                            name="confirmPassword"
+                                            class="w-full md:w-50 px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                            placeholder="Confirm Password"
+                                            type="password"
+                                        />
+                                    </section>
+                                </section>
+                                <button
+                                    type="submit"
+                                    class="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
+                                    href="#"
+                                >
+                                    Sign up
+                                </button>
+                            </form>
+                            <section class="mt-4 text-center">
                                 <p class="text-sm">
-                                    Already have an account.
+                                    Already have an account?
                                     <a
                                         href="#"
                                         class="text-blue-600 hover:underline"
                                     >
-                                        login up.
+                                        login.
                                     </a>
                                 </p>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
