@@ -1,0 +1,23 @@
+{
+    "name": "pet-adoption-ui",
+    "version": "1.0.0",
+    "description": "UI for [AI Based Pet Adoption System](https://github.com/SumitK27/AI-Based-Pet-Adoption-System) repository.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SumitK27/Pet-Adoption-UI.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SumitK27/Pet-Adoption-UI/issues"
+    },
+    "homepage": "https://github.com/SumitK27/Pet-Adoption-UI#readme",
+    "devDependencies": {
+        "tailwindcss": "^3.0.11"
+    }
+}
